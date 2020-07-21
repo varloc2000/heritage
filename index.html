@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Достояние</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="src/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/slider-pro/dist/css/slider-pro.min.css" integrity="sha512-v/XxHuJ2Q7eQ0Ot06LW84M154Vx/54VZY2MygLMdg7EPVZ/9TXQhkYA1VmaEfXVlT7sMhrXsk2Q/r+Q97kjx7Q==" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="dosto-flex-container">
+        <div
+            id="scene"
+            class="dosto-container"
+            data-friction-x="0.5"
+            data-friction-y="0.075"
+            data-scalar-y="10"
+            data-pointer-events="true"
+        >
+            <!-- 1 -->
+            <div
+                    class="dosto-title-wrapper"
+                    data-depth="0.25"
+                    data-invert-x="true"
+            >
+                <h1 class="dosto-title">"Достояние"</h1>
+            </div>
+            <!-- 2 -->
+            <div
+                    class="dosto-background"
+                    data-depth="0.20"
+            >
+                <div class="temp-wire"></div>
+                <div class="temp-frame">
+                    <div class="temp-qr" data-pointer-events="true"><a data-pointer-events="true" href="https://www.youtube.com/watch?v=4ZsDAJdYXTc" target="_blank"></a></div>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div
+                    class="dosto-person"
+                    data-depth="0.70"
+                    data-0="top:0px"
+                    data-100p="top:-700px"
+            >
+                <div class="temp-person">
+                    <div class="dosto-slider-cont">
+                        <div class="slider-pro" id="dosto-slider">
+                            <div class="sp-slides">
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="src/art/sutin.jpg"/>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="src/art/sutin%202.jpg"/>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="src/art/sutin%203.jpg"/>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="src/art/shagal%20.jpg"/>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="src/art/shagal%202.jpg"/>
+                                </div>
+                                <div class="sp-slide">
+                                    <img class="sp-image" src="src/art/shagal%203.jpg"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="dosto-footer">
+            <ul>
+                <li><a href="#">видео</a></li>
+                <li><a href="#">участники</a></li>
+                <li><a href="#">цели</a></li>
+                <li><a href="#">ссылки</a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <div id="dosto-modal" class="dosto-overlay">
+        <div class="dosto-overlay-flex">
+            <p class="dosto-intro">
+                Корпоративная коллекция Белгазпромбанка —
+                <br>
+                собрание произведений искусства, насчитывающее более 100 артефактов.
+                <br><br>
+                Начало формирования коллекции было положено в 2011 году.
+                <br>
+                Ядро коллекции составляют произведения художников Парижской школы — уроженцев Беларуси.
+                <br><br>
+                Живописные полотна всемирно известных художников Марка Шагала и Хаима Сутина стали их первыми в Беларуси оригинальными произведениями.
+                <br><br>
+                35 экспонатов собрания включены в Государственный список историко-культурных ценностей Республики Беларусь
+            </p>
+            <p class="dosto-intro">
+                13 июня 2020 года коллекция была приобщена к делу Белгазпромбанка и опечатана.
+                <br><br>
+                С 16 июня 2020 года галерея Арт-Беларусь презентует коллекцию в виде QR-кодов".
+            </p>
+            <p class="dosto-intro">
+                Перформанс "Достояние"
+                <br><br>
+                1.07.2020, Галерея "Арт-Беларусь", длительность : 2 часа
+                <br><br>
+                В перформансе приняли участие деятели различных сфер искусства и культуры.
+                <br><br>
+                Идея: Надя Саяпина
+                <br>
+                Видео : Таня Гаврильчик
+                <br><br>
+                Участники и участницы :
+                <br>
+                Янис Саар, Маша Танина, Анна Редько, Оксана Жгировская, Валентина Мороз, Кристина Брукштын, Ульяна Невзорова, Ирина Лукашенко, Doctor Oy, Лена Огорелышева, Кирилл Колбасников, Яня Зайченко, Мария Белькович, Надя Саяпина, Богдан Хмельницкий, Артур Комаровский, Саша Бобкова, Genady Arkhipau, Наташа Брик, Кристина Иванцова, Даша Чурко, Анна Смолякова, Светлана Смульская, Александр Ганулич.
+            </p>
+        </div>
+    </div>
+
+    <!-- -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/skrollr/dist/skrollr.min.js"></script>
+    <script src="node_modules/parallax-js/dist/parallax.min.js"></script>
+    <script src="node_modules/js-cookie/src/js.cookie.js"></script>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            var scene = document.getElementById('scene');
+            var parallaxInstance = new Parallax(scene);
+
+            var s = skrollr.init({
+                forceHeight: false
+            });
+
+            var delayTime = 3000;
+
+            // if (!Cookies.get('popup')) {
+                    disableScroll()
+                    $('#dosto-modal .dosto-intro').each(function (index) {
+                        $(this).delay(delayTime * index).queue(function() {
+                            $(this).prevAll().hide();
+                            $(this).fadeIn(delayTime / 10);
+
+                            if (0 == $(this).next().length) {
+                                console.log('this is last info element');
+                                // $(this).delay(delayTime).fadeOut(delayTime / 10);
+                                $(this).delay(delayTime).queue(function() {
+                                    $(this).fadeOut(delayTime / 10);
+                                    $(this).dequeue();
+                                    enableScroll();
+                                });
+                                $('#dosto-modal').delay(delayTime + delayTime / 10).fadeOut(delayTime / 2);
+                            }
+
+                            $(this).dequeue();
+                        });
+                    });
+
+                // Cookies.set('popup', 'valid', { expires: 3, path: "/" }); // need to set the path to fix a FF bug
+            // } else {
+            //     $('#dosto-modal').fadeOut(50);
+            // }
+
+            $('#dosto-slider').sliderPro({
+                width: 500,
+                height: 600,
+                arrows: true,
+                buttons: false,
+                waitForLayers: true,
+                fade: true,
+                autoplay: false,
+                autoScaleLayers: false,
+                imageScaleMode: 'contain'
+            });
+        });
+
+        // left: 37, up: 38, right: 39, down: 40,
+        // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+        var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+
+        function preventDefault(e) {
+            e.preventDefault();
+        }
+
+        function preventDefaultForScrollKeys(e) {
+            if (keys[e.keyCode]) {
+                preventDefault(e);
+                return false;
+            }
+        }
+
+        // modern Chrome requires { passive: false } when adding event
+        var supportsPassive = false;
+        try {
+            window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
+                get: function () { supportsPassive = true; }
+            }));
+        } catch(e) {}
+
+        var wheelOpt = supportsPassive ? { passive: false } : false;
+        var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
+
+        // call this to Disable
+        function disableScroll() {
+            window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
+            window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
+            window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
+            window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+        }
+
+        // call this to Enable
+        function enableScroll() {
+            window.removeEventListener('DOMMouseScroll', preventDefault, false);
+            window.removeEventListener(wheelEvent, preventDefault, wheelOpt);
+            window.removeEventListener('touchmove', preventDefault, wheelOpt);
+            window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
+        }
+    </script>
+
+    <script src="node_modules/slider-pro/dist/js/jquery.sliderPro.min.js"></script>
+</body>
+</html>
